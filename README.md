@@ -1,6 +1,6 @@
 laravel-sanctumを使用したSPA認証をvue-cliをフロント側に利用して作成。
 sessionのcookieに置いたトークンとaxiosのmetaフィールドの自動で付加する機能を利用。
-
+(少しづつ機能が修正されてます)
 
 
 
