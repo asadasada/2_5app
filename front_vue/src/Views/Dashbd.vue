@@ -4,7 +4,11 @@
     <div class="card">
       <div class="card-body" v-if="user">
         <h3> {{ user.name }}のページ</h3>
+
       </div>
+      <b-button @click="edit_hop">
+          メモ帳
+      </b-button>
     </div>
   </div>
 </template>
@@ -16,6 +20,11 @@ export default {
     return {
       user: null
     };
+  },
+  methods:{
+    edit_hop(){
+      this.$router.push({ name:'StoreMemo' })
+    }
   },
  mounted() {
     User.get_prf().then(response => {

@@ -15,8 +15,16 @@ export default {
        await Csrf.get_cookie();
       return async_h.post("/logout");
   },
+  async edit(form){
+     await Csrf.get_cookie();
+     return async_h.post("/edit",form);
+ },
   get_prf() {
     // return axios.get("http://localhost:8000/api/user")
   return async_h.get("/user");
+  },
+    get_memo() {
+    // return axios.get("http://localhost:8000/api/memo")
+  return async_h.get("/edit");
   }
 }

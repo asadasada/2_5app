@@ -9,7 +9,15 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
-
+/**
+* this function related to
+* 1 vs 1 relation
+* @return Model Memo
+*/
+public function memo()
+    {
+        return $this->hasOne('App\Memo');
+    }
     /**
      * The attributes that are mass assignable.
      *

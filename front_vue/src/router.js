@@ -4,6 +4,7 @@ import Home from './Views/Home.vue'
 import Login from './Views/Login.vue'
 import Register from './Views/Register.vue'
 import Dashbd from './Views/Dashbd.vue'
+import StoreMemo from './Views/StoreMemo.vue'
 
 Vue.use(Router);
 
@@ -29,6 +30,12 @@ const routes = [
         path: "/Dashbd",
         name: "Dashbd",
         component: Dashbd,
+        meta: { authOnly:true }
+    },
+    {
+        path: "/StoreMemo",
+        name: "StoreMemo",
+        component: StoreMemo,
         meta: { authOnly:true }
     },
 ]

@@ -19,6 +19,8 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 }
 );
+Route::get('/edit','EditController@index');
 Route::post('/register','RegisterController@register');
 Route::post('/login','LoginController@login');
 Route::post('/logout','LoginController@logout');
+Route::post('/edit','EditController@edit');
