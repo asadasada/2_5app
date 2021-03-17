@@ -2,11 +2,14 @@
     <div style="padding :8px">
     <!-- ここにデータベースから持ってきた値を表示 -->
     <!-- 正規表現にてリンクはreplace -->
-    <div :class="{disp: (!edit_flg)}">
-        nanashi
+    <div v-if="!edit_flg">
+        Memo :
+        <br>
+        {{ this.form.memo.text }}
+        {{ this.form.memo.updated_at }}
     </div>
     <!-- 値がなければ非表示 -->
- <div :class="{disp: edit_flg}">
+ <div v-if="edit_flg">
     <b-form-textarea
       id="textarea"
       placeholder="Enter something..."
@@ -37,6 +40,7 @@
         },
         methods:{
             edit(){
+                //edit_flg == true で編集
                 Csrf.get_cookie();
                 console.log("編集したよ！");
                 if(this.edit_flg){
@@ -51,6 +55,8 @@
         mounted(){
             User.get_memo().then(response => {
       this.form.memo = response.data;
+      console.log("component mounted!");
+      console.log(this.form.memo);
       console.log(this.edit_flg);
     });
         }

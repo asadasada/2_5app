@@ -53,11 +53,13 @@ class EditController extends Controller
         $res = $user->memo()->first()->update(["text"=>$request->text]);
         if(!$res){
             $res = false;
+            return response()->json(["error"=>"can't update data!"]);
         }else{
             $res = $user->memo()->first();
         }
     }
-            return response()->json([$id,$res]);
+    $res = array_diff_key($res->getAttributes(), array_flip(["id", "user_id"]));
+            return response()->json($res);
         }
 
 }
