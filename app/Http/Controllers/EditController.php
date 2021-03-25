@@ -36,15 +36,15 @@ class EditController extends Controller
         $id = Auth::id();
         $user = User::find($id);
         $res = null;
-        //validationで弾く?
-        if(is_null($request->text)){
+/*
+$request->textの値がnullの場合,明示的に""を代入させる
+*/
+        if(!$user->memo()->first()){
+
+            $text = $request->text?:"";
             $res = $user->memo()->create([
-            'text' => ""
-        ]);
-        }elseif(!$user->memo()->first()){
-        $res = $user->memo()->create([
-            'text' => $request->text
-        ]);
+                'text' => $text
+            ]);
     }else{
             /*
                 もし$resが0つまりupdateが失敗したらfalseを入れる。
@@ -58,7 +58,14 @@ class EditController extends Controller
             $res = $user->memo()->first();
         }
     }
+    //response dataの加工処理 idやuser_idをresponseから除外したりformatを付けたり
+    //配列になるので事前にformatを付ける
+    $parsed_create = $res->created_at->toDate()->format("m j, Y, g:i a");
+    $parsed_update = $res->updated_at->toDate()->format("m j, Y, g:i a");
     $res = array_diff_key($res->getAttributes(), array_flip(["id", "user_id"]));
+    //破壊的な代入なので値には気をつける
+    $res["created_at"] = $parsed_create;
+    $res["updated_at"] = $parsed_update;
             return response()->json($res);
         }
 
