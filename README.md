@@ -1,10 +1,10 @@
-#オンラインメモ帳
+# オンラインメモ帳
 これはlaravel-sanctumを使用し登録機能を備えたオンラインメモ帳アプリです。
 vue.jsを使用しているためスムーズにページ遷移ができ、保存したメモ帳は編集の度にデータベースに保存しているため
 ちょっとしたメモやリンク等の保存をかんたんに行うことができどこからでもログインしてチェックができます。
 またメモ帳はマークダウン記法にも対応しているため、文章の構成に変化をもたせることが可能です！
 
-#####webアプリへのリンク
+##### webアプリへのリンク
 [http://piyohiko.tk]
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
