@@ -5,7 +5,7 @@ vue.jsを使用しているためスムーズにページ遷移ができ、保�
 またメモ帳はマークダウン記法にも対応しているため、文章の構成に変化をもたせることが可能です！
 
 ##### webアプリへのリンク
-[http://piyohiko.tk]
+[ メモ帳へのリンク ](http://piyohiko.tk)
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
