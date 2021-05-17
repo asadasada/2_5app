@@ -1,5 +1,5 @@
 # オンラインメモ帳
-![landingpage](https://user-images.githubusercontent.com/6861884/118238488-8a84f300-b4d3-11eb-8800-853686d25237.png)
+![screenshot](https://user-images.githubusercontent.com/6861884/118458616-e9e23d80-b735-11eb-8d13-747a01ce15dc.png)
 
 これはlaravel-sanctumを使用し登録機能を備えたオンラインメモ帳アプリです。
 vue.jsを使用しているためスムーズにページ遷移ができ、保存したメモ帳は編集の度にデータベースに保存しているため
