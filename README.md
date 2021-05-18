@@ -37,6 +37,17 @@ vue.jsを使用しているためスムーズにページ遷移ができ、保�
 ">> " `二重引用`
 
 "\`\`\`" `codeの記述`
+
+###　使用技術
+
+-digital ocean droplet(ubuntu)
+-php7.4(laravel)
+-nginx+php7.4-fpm
+- lodash
+- vue.js
+- sqlite3
+- axios
+- laravel-sanctum
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
