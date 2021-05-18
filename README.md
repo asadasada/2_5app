@@ -15,6 +15,8 @@ vue.jsを使用しているためスムーズにページ遷移ができ、保�
 文章をメモ帳に貼り付け"編集”ボタンをクリックすると文章がデータベースに保存されます。
 ## マークダウン記法の使い方(一部)
 
+![Screenshot from 2021-05-18 13-14-22](https://user-images.githubusercontent.com/6861884/118589278-084e4480-b7db-11eb-9841-f1a9c3ba13fc.png)
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
