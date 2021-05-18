@@ -17,6 +17,15 @@ vue.jsを使用しているためスムーズにページ遷移ができ、保�
 
 ![Screenshot from 2021-05-18 13-14-22](https://user-images.githubusercontent.com/6861884/118589278-084e4480-b7db-11eb-9841-f1a9c3ba13fc.png)
 
+"# text" `見出し1`
+"## text" `見出し2`
+"### text" `見出し3`
+"\`(shift + @)" `text`
+"-,+ *"  `リスト`
+"数値+半角ドット" `番号付きリスト`
+" >"  `引用`
+">> " `二重引用`
+"\`\`\`" "codeの記述"
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
