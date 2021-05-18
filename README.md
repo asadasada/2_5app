@@ -17,6 +17,9 @@ vue.jsを使用しているためスムーズにページ遷移ができ、保�
 
 ![Screenshot from 2021-05-18 13-14-22](https://user-images.githubusercontent.com/6861884/118589278-084e4480-b7db-11eb-9841-f1a9c3ba13fc.png)
 
+![Screenshot from 2021-05-18 13-22-04](https://user-images.githubusercontent.com/6861884/118589822-210b2a00-b7dc-11eb-869c-6fe987305f46.png)
+
+
 "# text" `見出し1`
 
 "## text" `見出し2`
