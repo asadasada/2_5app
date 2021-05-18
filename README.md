@@ -40,7 +40,7 @@ vue.jsを使用しているためスムーズにページ遷移ができ、保�
 
 ###　使用技術
 
--digital ocean droplet(ubuntu)
+-digital_ocean_droplet(ubuntu)
 -php7.4(laravel)
 -nginx+php7.4-fpm
 - lodash
